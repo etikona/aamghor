@@ -112,7 +112,7 @@ const products = [
 
 const ProductsPage = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-10">
+    <section className="max-w-6xl mx-auto px-6 py-10 bg-gradient-to-br from-yellow-100 via-white to-green-50">
       <h2 className="text-3xl font-bold mb-8 text-center text-green-800">
         Our Mango Products
       </h2>
