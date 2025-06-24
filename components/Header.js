@@ -37,16 +37,16 @@ export default function Navbar() {
     <nav
       className={`w-full flex items-center justify-between px-4 md:px-6 py-3 sticky top-0 z-50 transition-all duration-300 ${
         isScrolled ? "shadow-md" : ""
-      } bg-yellow-500 text-white `}
+      } bg-yellow-500 text-white relative`}
     >
-      {/* Logo */}
+      {/* Logo (Left) */}
       <Link
         href="/"
-        className="flex items-center hover:scale-105 transition-transform duration-200"
+        className="flex items-center hover:scale-105 transition-transform duration-200 z-10"
       >
         <Image
           src={logo}
-          alt="Supreme Motors Logo"
+          alt="AAMGHOR Logo"
           width={200}
           height={200}
           className="w-12 md:w-16 h-auto object-contain"
@@ -54,8 +54,13 @@ export default function Navbar() {
         />
       </Link>
 
-      {/* Desktop Navigation */}
-      <ul className="hidden md:flex items-center space-x-6 text-sm font-medium">
+      {/* Center Text */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 text-lg md:text-2xl font-bold">
+        AAMGHOR.COM
+      </div>
+
+      {/* Desktop Navigation (Right) */}
+      <ul className="hidden md:flex items-center space-x-6 text-sm font-medium z-10">
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link
@@ -72,8 +77,8 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Mobile Menu */}
-      <div className="md:hidden">
+      {/* Mobile Menu (Right) */}
+      <div className="md:hidden z-10">
         <Sheet>
           <SheetTrigger asChild>
             <Button
@@ -92,7 +97,7 @@ export default function Navbar() {
               <SheetTitle className="text-left">
                 <Image
                   src={logo}
-                  alt="Supreme Motors Logo"
+                  alt="AAMGHOR Logo"
                   width={80}
                   height={40}
                   className="w-32 h-auto object-contain"
