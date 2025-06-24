@@ -1,6 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
+import salam from "../public/assets/salam.jpeg";
+import maria from "../public/assets/maria.jpeg";
 
 export const OwnerDetailsSection = () => {
   const owners = [
@@ -10,6 +13,7 @@ export const OwnerDetailsSection = () => {
       university: "Gopalganj Science & Technology University",
       degree: "BBA in Management Studies",
       initials: "FS",
+      image: salam,
     },
     {
       name: "Maria Sultana",
@@ -17,6 +21,7 @@ export const OwnerDetailsSection = () => {
       university: "Gopalganj Science & Technology University",
       degree: "BBA in Management Studies",
       initials: "MS",
+      image: maria,
     },
   ];
 
@@ -36,6 +41,15 @@ export const OwnerDetailsSection = () => {
               {/* <Avatar className="h-20 w-20 border-4 border-orange-300">
                 <AvatarFallback>{owner.initials}</AvatarFallback>
               </Avatar> */}
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                <Image
+                  src={owner.image}
+                  alt={owner.name}
+                  width={128}
+                  height={128}
+                  className="object-cover w-full h-full"
+                />
+              </div>
               <div>
                 <h3 className="text-xl font-semibold text-orange-900">
                   {owner.name}
