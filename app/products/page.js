@@ -46,11 +46,11 @@ const products = [
       "https://i.pinimg.com/736x/ae/91/f5/ae91f576a76f5432a84927b708a8fec6.jpg",
   },
   {
-    name: "Ashwina",
-    quantity: "6 KG",
-    price: 430,
+    name: "Organic Mango Juice",
+    quantity: "250 GM",
+    price: 400,
     image:
-      "https://i.pinimg.com/736x/46/af/ec/46afec126ab72f4af162dfbc939ac851.jpg",
+      "https://i.pinimg.com/736x/92/bb/7e/92bb7efb038d1660f6060d3251b89a47.jpg",
   },
   {
     name: "Lakhna",
@@ -60,11 +60,11 @@ const products = [
       "https://i.pinimg.com/736x/c1/c0/30/c1c0302551ea28764d5bba416ab7ffc7.jpg",
   },
   {
-    name: "Surma Fazli",
-    quantity: "8 KG",
-    price: 460,
+    name: "Raw Mango Pickle",
+    quantity: "500 GM",
+    price: 250,
     image:
-      "https://i.pinimg.com/736x/14/39/ed/1439ed579aac90908b8d8741bcfe4818.jpg",
+      "https://i.pinimg.com/736x/b2/89/85/b28985c4174ba4e0b5252542b0c45846.jpg",
   },
   {
     name: "Haribhanga",
@@ -74,11 +74,11 @@ const products = [
       "https://i.pinimg.com/736x/3c/bd/f9/3cbdf9ab154dac0097c28cb0c293a29b.jpg",
   },
   {
-    name: "Khirsha",
-    quantity: "6 KG",
-    price: 410,
+    name: "Mango Fruit Lether",
+    quantity: "750 GM",
+    price: 1200,
     image:
-      "https://i.pinimg.com/736x/b5/7e/54/b57e54a4d2302a8daf587bb985a8ea20.jpg",
+      "https://i.pinimg.com/736x/be/2e/7d/be2e7d631c0d1d57488f02dfc3be15d3.jpg",
   },
   {
     name: "Banganapalli",
